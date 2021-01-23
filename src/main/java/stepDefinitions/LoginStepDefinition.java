@@ -11,6 +11,8 @@ import org.testng.Assert;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.testng.asserts.SoftAssert;
 
 public class LoginStepDefinition{
@@ -21,8 +23,10 @@ public class LoginStepDefinition{
 	
 	 @Given("^user is already on Login Page$")
 	 public void user_already_on_login_page(){
-	 System.setProperty("webdriver.chrome.driver","C:\\Users\\farhan.soomro\\Downloads\\chromedriver_win32\\chromedriver.exe");
-	 driver = new ChromeDriver();
+//	 System.setProperty("webdriver.chrome.driver","C:\\Users\\farhan.soomro\\Downloads\\chromedriver_win32\\chromedriver.exe");
+
+		 WebDriverManager.chromedriver().setup();
+		 driver = new ChromeDriver();
 		 driver.get("https://ui.cogmento.com/");
 	 //driver.get("https://www.freecrm.com/index.html");
 		 softAssert= new SoftAssert();
