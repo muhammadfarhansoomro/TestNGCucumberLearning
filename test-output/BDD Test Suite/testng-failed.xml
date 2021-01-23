@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [BDD Test Suite]" parallel="tests">
-  <test thread-count="1" name="Login and Update Profile Test(failed)" parallel="tests">
+  <test thread-count="1" name="FREE CRM Test(failed)" parallel="tests">
     <classes>
       <class name="MyRunner.TestRunner">
         <methods>
@@ -11,5 +11,5 @@
         </methods>
       </class> <!-- MyRunner.TestRunner -->
     </classes>
-  </test> <!-- Login and Update Profile Test(failed) -->
+  </test> <!-- FREE CRM Test(failed) -->
 </suite> <!-- Failed suite [BDD Test Suite] -->

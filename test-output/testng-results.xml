@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="BDD Test Suite" duration-ms="27777" started-at="2018-04-11T19:19:42Z" finished-at="2018-04-11T19:20:09Z">
+  <suite name="BDD Test Suite" duration-ms="1921" started-at="2021-01-23T14:54:46Z" finished-at="2021-01-23T14:54:48Z">
     <groups>
       <group name="cucumber">
         <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@31a5c39e]" name="feature" class="MyRunner.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="FREE CRM Test" duration-ms="27777" started-at="2018-04-11T19:19:42Z" finished-at="2018-04-11T19:20:09Z">
+    <test name="FREE CRM Test" duration-ms="1921" started-at="2021-01-23T14:54:46Z" finished-at="2021-01-23T14:54:48Z">
       <class name="MyRunner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:MyRunner.TestRunner@31a5c39e]" name="setUpClass" is-config="true" duration-ms="197" started-at="2018-04-11T19:19:42Z" finished-at="2018-04-11T19:19:42Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:MyRunner.TestRunner@31a5c39e]" name="setUpClass" is-config="true" duration-ms="603" started-at="2021-01-23T14:54:46Z" finished-at="2021-01-23T14:54:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@31a5c39e]" name="feature" duration-ms="27465" started-at="2018-04-11T19:19:42Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-04-11T19:20:09Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@31a5c39e]" name="feature" duration-ms="783" started-at="2021-01-23T14:54:46Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-01-23T14:54:47Z">
           <params>
             <param index="0">
               <value>
@@ -22,10 +22,52 @@
               </value>
             </param>
           </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\farhan.soomro\Downloads\chromedriver_win32\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\farhan.soomro\Downloads\chromedriver_win32\chromedriver.exe
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at MyRunner.TestRunner.feature(TestRunner.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\farhan.soomro\Downloads\chromedriver_win32\chromedriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at stepDefinitions.LoginStepDefinition.user_already_on_login_page(LoginStepDefinition.java:25)
+at ✽.Given user is already on Login Page(login.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:MyRunner.TestRunner@31a5c39e]" name="tearDownClass" is-config="true" duration-ms="19" started-at="2018-04-11T19:20:09Z" finished-at="2018-04-11T19:20:09Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:MyRunner.TestRunner@31a5c39e]" name="tearDownClass" is-config="true" duration-ms="237" started-at="2021-01-23T14:54:47Z" finished-at="2021-01-23T14:54:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

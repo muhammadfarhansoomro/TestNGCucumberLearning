@@ -23,7 +23,6 @@ public class LoginStepDefinition{
 	
 	 @Given("^user is already on Login Page$")
 	 public void user_already_on_login_page(){
-//	 System.setProperty("webdriver.chrome.driver","C:\\Users\\farhan.soomro\\Downloads\\chromedriver_win32\\chromedriver.exe");
 
 		 WebDriverManager.chromedriver().setup();
 		 driver = new ChromeDriver();
