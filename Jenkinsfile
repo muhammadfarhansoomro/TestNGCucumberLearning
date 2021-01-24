@@ -1,8 +1,4 @@
 node(){
-		agent any
-		tools { 
-		maven 'Maven 3.5.4'
-	   	 }
 		def repoURL='https://github.com/muhammadfarhansoomro/TestNGCucumberLearning.git'
 
 		stage("Prepare Workspace"){
