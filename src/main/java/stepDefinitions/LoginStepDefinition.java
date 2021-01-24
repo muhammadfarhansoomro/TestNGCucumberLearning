@@ -5,6 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
@@ -24,8 +25,10 @@ public class LoginStepDefinition{
 	 @Given("^user is already on Login Page$")
 	 public void user_already_on_login_page(){
 
-		 WebDriverManager.chromedriver().setup();
-		 driver = new ChromeDriver();
+		// WebDriverManager.chromedriver().setup();
+		 WebDriverManager.firefoxdriver().setup();
+		 driver = new FirefoxDriver();
+		 //driver = new ChromeDriver();
 		 driver.get("https://ui.cogmento.com/");
 	 //driver.get("https://www.freecrm.com/index.html");
 		 softAssert= new SoftAssert();
