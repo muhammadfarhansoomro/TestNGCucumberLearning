@@ -10,6 +10,9 @@ node(){
 		stage('Checkout Self'){
 		git branch:'main',credentialsId:'',url:repoURL
 		}
+		tools { 
+		maven 'Maven 3.5.4'
+	   	 }
 		stage('Cucumber Tests'){
 			withMaven(maven:'/usr/maven/bin'){
 				sh """
