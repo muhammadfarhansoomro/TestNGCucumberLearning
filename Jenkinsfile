@@ -26,4 +26,3 @@ node(){
 		echo serverInfo.data.toString()
     }
   }
-}
