@@ -15,6 +15,8 @@ node(){
 					cd ${env.WORKSPACE_LOCAL}
 					mvn clean test
 				"""
+				catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                   		 sh "exit 1"
 			}
 		}
 		stage('Expose report'){
