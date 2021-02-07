@@ -21,4 +21,9 @@ node(){
 			archive "**/cucumber.json"
 			cucumber '**/cucumber.json'
 		}
+	stage('JIRA') {
+   		 def serverInfo = jiraGetServerInfo site: '192.168.253.1:8090', failOnError: true
+		echo serverInfo.data.toString()
+    }
+  }
 }
