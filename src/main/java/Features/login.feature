@@ -11,6 +11,6 @@ Then Close the browser
 
 
 Examples:
-	| username | password |
-	| naveenk  | test@123 |
+	| username 	| password |
+	| farhansoomro  | test@123 |
 		
