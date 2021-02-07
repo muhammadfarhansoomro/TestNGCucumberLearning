@@ -1,6 +1,6 @@
-Feature: Free CRM Login Feature
+Feature: Login Feature
 
-Scenario Outline: Free CRM Login Test Scenario
+Scenario Outline: Login Test Scenario
 
 Given user is already on Login Page
 When title of login page is Free CRM
